@@ -17,7 +17,7 @@ struct ProductModel {
             ProductModel(name: "BBB", price: 20000),
             ProductModel(name: "CCC", price: 30000),
             ProductModel(name: "DDD", price: 340000),
-            ProductModel(name: "DDD", price: 50000),
+            ProductModel(name: "DDD", price: 50000)
         ]
     }
 }
