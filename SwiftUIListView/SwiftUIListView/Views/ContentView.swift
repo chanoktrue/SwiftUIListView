@@ -12,7 +12,10 @@ struct ContentView: View {
     @ObservedObject private var productVM = ProductViewModel()
     
     var body: some View {
-        ListView(productVM: productVM)
+        NavigationView {
+            ListView(productVM: productVM)
+                .navigationBarTitle(Text("Product"))
+        }
     }
 }
 
@@ -27,17 +30,31 @@ struct ListView: View {
     @ObservedObject var productVM: ProductViewModel
     
     var body: some View {
+        
         List {
             ForEach(productVM.products, id: \.self) { data in
-                HStack {
-                    Text(data.name)
-                    Spacer()
-                    Text(data.price.withCommas())
-                }
+                
+                NavigationLink(
+                    destination: DetailView(product: data),
+                    label: {
+                        HStack {
+                            Text("😀")
+                                .font(Font.system(size: 50))
+                            Text(data.name)
+                            Spacer()
+                            Text(data.price.withCommas())
+                        }
+                    })
+                    .padding()
             }
+            //: Foreach
             .onDelete(perform: { indexSet in
                 productVM.delete(offsets: indexSet)
             })
         }
+        //: List
     }
+    
+    
 }
+

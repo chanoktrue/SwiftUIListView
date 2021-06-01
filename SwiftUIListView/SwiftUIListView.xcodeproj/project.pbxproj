@@ -14,6 +14,7 @@
 		CD341DD72665F4800055C84C /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD341DD62665F4800055C84C /* ProductModel.swift */; };
 		CD341DD92665F52E0055C84C /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD341DD82665F52E0055C84C /* ProductViewModel.swift */; };
 		CD341DDC2665FFC00055C84C /* Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD341DDB2665FFC00055C84C /* Extenstions.swift */; };
+		CD341DDE266603970055C84C /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD341DDD266603970055C84C /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		CD341DD62665F4800055C84C /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		CD341DD82665F52E0055C84C /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
 		CD341DDB2665FFC00055C84C /* Extenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extenstions.swift; sourceTree = "<group>"; };
+		CD341DDD266603970055C84C /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				CD341DC52665F4060055C84C /* ContentView.swift */,
+				CD341DDD266603970055C84C /* DetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD341DC62665F4060055C84C /* ContentView.swift in Sources */,
+				CD341DDE266603970055C84C /* DetailView.swift in Sources */,
 				CD341DDC2665FFC00055C84C /* Extenstions.swift in Sources */,
 				CD341DD72665F4800055C84C /* ProductModel.swift in Sources */,
 				CD341DD92665F52E0055C84C /* ProductViewModel.swift in Sources */,
