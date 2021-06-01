@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject private var productVM = ProductViewModel()
+    
     var body: some View {
-       ListView()
+        ListView(productVM: productVM)
     }
 }
 
@@ -20,7 +23,21 @@ struct ContentView_Previews: PreviewProvider {
 }
 
 struct ListView: View {
+    
+    @ObservedObject var productVM: ProductViewModel
+    
     var body: some View {
-        Text("xxxx")
+        List {
+            ForEach(productVM.products, id: \.self) { data in
+                HStack {
+                    Text(data.name)
+                    Spacer()
+                    Text(data.price.withCommas())
+                }
+            }
+            .onDelete(perform: { indexSet in
+                productVM.delete(offsets: indexSet)
+            })
+        }
     }
 }

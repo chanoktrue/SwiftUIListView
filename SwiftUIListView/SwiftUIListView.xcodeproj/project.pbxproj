@@ -13,6 +13,7 @@
 		CD341DCB2665F40B0055C84C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD341DCA2665F40B0055C84C /* Preview Assets.xcassets */; };
 		CD341DD72665F4800055C84C /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD341DD62665F4800055C84C /* ProductModel.swift */; };
 		CD341DD92665F52E0055C84C /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD341DD82665F52E0055C84C /* ProductViewModel.swift */; };
+		CD341DDC2665FFC00055C84C /* Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD341DDB2665FFC00055C84C /* Extenstions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		CD341DCC2665F40B0055C84C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD341DD62665F4800055C84C /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		CD341DD82665F52E0055C84C /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
+		CD341DDB2665FFC00055C84C /* Extenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extenstions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				CD341DD42665F4370055C84C /* ViewModels */,
 				CD341DD32665F42F0055C84C /* Services */,
 				CD341DD22665F4200055C84C /* Models */,
+				CD341DDA2665FFA80055C84C /* Extensions */,
 				CD341DC72665F40B0055C84C /* Assets.xcassets */,
 				CD341DCC2665F40B0055C84C /* Info.plist */,
 				CD341DC92665F40B0055C84C /* Preview Content */,
@@ -105,6 +108,14 @@
 				CD341DC52665F4060055C84C /* ContentView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		CD341DDA2665FFA80055C84C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CD341DDB2665FFC00055C84C /* Extenstions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD341DC62665F4060055C84C /* ContentView.swift in Sources */,
+				CD341DDC2665FFC00055C84C /* Extenstions.swift in Sources */,
 				CD341DD72665F4800055C84C /* ProductModel.swift in Sources */,
 				CD341DD92665F52E0055C84C /* ProductViewModel.swift in Sources */,
 				CD341DC42665F4060055C84C /* SwiftUIListViewApp.swift in Sources */,

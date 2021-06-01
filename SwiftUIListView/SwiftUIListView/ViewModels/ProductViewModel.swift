@@ -11,4 +11,8 @@ class ProductViewModel: ObservableObject {
     
     @Published var products: [ProductModel] = ProductModel.products
     
+    func delete(offsets: IndexSet) {
+        products.remove(atOffsets: offsets)
+    }
+    
 }

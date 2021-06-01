@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ProductModel {
+struct ProductModel: Hashable {
     let name: String
     let price: Double
     
@@ -16,8 +16,8 @@ struct ProductModel {
             ProductModel(name: "AAA", price: 10000),
             ProductModel(name: "BBB", price: 20000),
             ProductModel(name: "CCC", price: 30000),
-            ProductModel(name: "DDD", price: 340000),
-            ProductModel(name: "DDD", price: 50000)
+            ProductModel(name: "DDD", price: 40000),
+            ProductModel(name: "EEE", price: 50000)
         ]
     }
 }
